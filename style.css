@@ -1,0 +1,153 @@
+img {
+  width: 80%;
+  padding: 50px;
+}
+.hidden {
+  opacity: 0;
+  display: none;
+}
+.search-container {
+  display: flex;
+  margin: 5px;
+  width: 110%;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+}
+input:focus {
+  border: 1px solid hsl(0, 97%, 49%);
+  box-shadow: none!important;
+}
+.btn-search {
+  border: none;
+  padding-bottom: 10px 25px;
+  border-radius: 0 5px 5px 0;
+  background-color: #e70101;
+  color: #fff;
+  margin-left: -15px;
+  cursor: pointer;
+}
+.close{
+  color:#ffffff;
+  background-color: #e70101;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+
+  padding: 30px 15px;
+  color: #000000;
+}
+
+.pokemon-card {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cp-text span {
+  font-size: 16px;
+}
+
+.img-container {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:80px 30px 40px;
+  border-radius: 10px;
+  background-color: #DF1818;
+  width: 100%;
+  margin-top: -150px;
+  box-shadow: 0 0 20px rgba(73, 0, 0, 0.774);
+}
+
+
+.attributes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 80%;
+  text-transform: capitalize;
+}
+
+.statistics {
+  padding-right: 10px;
+  border-right: 1px solid #eee;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15;
+  line-height: 35px;
+  color: #ffd3d3;
+
+}
+.statistics:last-child {
+  border: none;
+}
+
+#update_name{
+  text-transform: capitalize;
+}
+
+h2{
+  font-family: Quantico;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 50px;
+  margin-top: -10px;
+  color: #DF1818;
+}
+
+h4{
+  margin-top: -50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 35px;
+  color: #7e7e7e;
+}
+
+h3{
+  font-family: Quantico;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 129px;
+  margin: -20px;
+  color: #ffffff;
+}
+
+small{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+
+body {
+  background-image: url("background1.png");
+  background-color: #cccccc;
+
+ }
+
+ html, body {margin: 0; height: 100%; overflow: hidden}

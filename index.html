@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PokeDex</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quantico">
+ 
+</head>
+  <body>
+
+    <div class="container flex-center">
+      <h2>PokeDex</h2>
+      <h4 class="text-muted">Search for some cool pokemon statistics!</h4>
+      <div class="search-container col-md-5 col-sm-5">
+        <input type="text" class="form-control" id="search_q" placeholder="Search pokemon">
+        <button class="btn-search" id="search-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="show_error" class="hidden alert alert-danger alert-dismissible fade" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <strong></strong> We don't have that pokemon in our PokeDex :"(
+      </div>
+      <div class="col-md-5 col-sm-5 pokemon-card" id="pokemon_details">
+          <div class="img-container">
+              <img id="update_img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="" srcset="">
+          </div>
+          <div class="detail-container">
+              <div class="title-container">
+                  <h3 class="name text-center" id="update_name">Pikachu</h3>
+                 
+              </div>
+              <div class="attributes-container">
+                  <div class="col attributes-content" style="min-width: 42%;">
+                      <p class="statistics" id="update_type">Electric / Speed</p>
+                      <small class="text-muted">Type</small>
+                  </div>
+                  <div class="col attributes-content">
+                    <p class="statistics" id="update_weight">5.58kg</p>
+                    <small class="text-muted">Weight</small>
+                  </div>
+                  <div class="col attributes-content">
+                    <p class="statistics" id="update_height">0.82m</p>
+                    <small class="text-muted">Height</small>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      
+
+    <script src="app.js"></script>
+  
+  </body>
+</html>
